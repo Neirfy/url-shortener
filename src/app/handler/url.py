@@ -5,7 +5,7 @@ from app.schema.url import CreateUrl, ShortUrl
 from common.stats import NotFound
 from core.database.postgres_connector import CurrentSession
 
-router = APIRouter(prefix="/url", tags=["Ссылки"])
+router = APIRouter(prefix="", tags=["Ссылки"])
 
 
 @router.post(
