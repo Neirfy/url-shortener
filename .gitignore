@@ -1,0 +1,10 @@
+__pycache__/
+.env
+.env.deploy
+.vscode/
+.DS_Store
+.idea/
+
+alembic/versions/*
+
+.pytest_cache

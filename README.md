@@ -1,13 +1,17 @@
 # Микросервис для сокращения ссылок
 
+- `POST /url/shorten` — принимает в body оригинальную ссылку и возвращает короткую.
+- `GET /url/{short_id}` — редиректит на оригинальную ссылку по короткому ID.
+- `GET /stats/{short_id}` — возвращает количество редиректов для короткой ссылки.
+
 ## Запуск в Docker
 
-    docker compose -f docker/docker-compose.yml up --build
+    make docker
 
-## Install
+## Ссылка на swagger
 
-    TODO
+    http://127.0.0.1:8000/api/v1/docs#/
 
 ## Tests
 
-    TODO
+    make test
